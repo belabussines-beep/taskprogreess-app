@@ -1169,21 +1169,20 @@
                 toast.classList.add('translate-y-20', 'opacity-0');
             }, 3000);
         }
-    </script
+    </script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/13.2.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.2.0/firebase-analytics.js";
         const firebaseConfig = {
-  apiKey: "AIzaSyAHB6wL6g25ZferQJS59KZlHqMx3mkXuZs",
-  authDomain: "taskprogreess-app.firebaseapp.com",
-  projectId: "taskprogreess-app",
-  storageBucket: "taskprogreess-app.firebasestorage.app",
-  messagingSenderId: "214475928956",
-  appId: "1:214475928956:web:5c8f0302c62382e86720f9",
-  measurementId: "G-894FPK8ZF5"
-};
-        const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
->
-</body
-    <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/13.2.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.2.0/firebase-analytics.js";>
+    apiKey: "AIzaSyAHB6wL6g25ZferQJS59KZlHqMx3mkXuZs",
+    authDomain: "taskprogreess-app.firebaseapp.com",
+    projectId: "taskprogreess-app",
+    storageBucket: "taskprogreess-app.firebasestorage.app",
+    messagingSenderId: "214475928956",
+    appId: "1:214475928956:web:5c8f0302c62382e86720f9",
+    measurementId: "G-894FPK8ZF5"
+  };
+     const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+    </script>
+</body>
 </html>
