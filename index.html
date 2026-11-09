@@ -659,7 +659,7 @@
                 };
 
                 try {
-                    const taskDocRef = window.doc(window.db, 'artifacts', window.appId, 'public', 'data', 'tasks', taskId);
+                    const taskDocRef = doc(db, 'artifacts', window.appId, 'public', 'data', 'tasks', taskId);
                     await window.setDoc(taskDocRef, newTask);
                     closeModal('newTaskModal');
                     document.getElementById('newTaskForm').reset();
