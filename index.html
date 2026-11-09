@@ -661,8 +661,8 @@ window.setDoc = setDoc;
                 };
 
                 try {
-                    const taskDocRef = doc(db, 'artifacts', window.appId, 'public', 'data', 'tasks', taskId);
-                    await setDoc(taskDocRef, newTask);
+                    const taskDocRef = window.doc(db, 'artifacts', window.appId, 'public', 'data', 'tasks', taskId);
+                    await window.setDoc(taskDocRef, newTask);
                     closeModal('newTaskModal');
                     document.getElementById('newTaskForm').reset();
                     showToast('Tarea publicada en la nube');
