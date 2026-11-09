@@ -493,6 +493,8 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, deleteDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+window.doc = doc;
+window.setDoc = setDoc;
 
         // Firebase Configuration & Initialization
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'task-management-app';
